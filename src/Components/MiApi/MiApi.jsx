@@ -1,7 +1,6 @@
 import { useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Footer from "../Footer/Footer";
 const MiApi = ({Info, setInfo, Search}) => {
     const [Orden, setOrden] = useState("")
     const UrlApi = "https://api.themoviedb.org/3/discover/movie?api_key"
@@ -65,7 +64,6 @@ const handleChange = (e) => {
             </Card>
         ))}
     </div>
-    <Footer/>
     </>
   )
 }
